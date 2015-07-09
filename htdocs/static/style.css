@@ -1,0 +1,357 @@
+@charset "UTF-8";
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* General */
+.float-list, .wrap, .l-contents, .cf {
+  *zoom: 1;
+}
+.float-list:after, .wrap:after, .l-contents:after, .cf:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.float-list li {
+  float: left;
+}
+
+/* Base */
+body {
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Meiryo', 'メイリオ', 'sans-serif';
+  background: #fdfdfd;
+}
+
+a {
+  color: #253059;
+  text-decoration: underline;
+}
+a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+/* Layout */
+/*==============================
+共通要素
+==============================*/
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/*==============================
+ヘッダー
+==============================*/
+.l-header {
+  background: #fdfdfd;
+}
+.l-header .header-logo {
+  float: left;
+  width: 280px;
+  padding: 13px 0 0;
+}
+.l-header h1 {
+  float: left;
+  padding: 25px 0 0;
+  width: 280px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #525252;
+}
+.l-header .header-btn {
+  float: right;
+  width: 440px;
+}
+.l-header .header-btn .header-list {
+  padding: 23px 0 0 0;
+}
+.l-header .header-btn .header-list li {
+  padding: 0 0 0 20px;
+}
+
+/*==============================
+グローバルナビ
+==============================*/
+.l-navi {
+  width: 100%;
+  height: 60px;
+  margin: 17px 0 5px;
+  background: url(assets/img/layout/navi/navi_bg.png) no-repeat center center;
+}
+.l-navi .navi-list {
+  width: 1000px;
+  margin: 0 auto;
+}
+.l-navi .navi-list li {
+  height: 45px;
+}
+
+/*==============================
+トップスライダー
+==============================*/
+.l-top-slider {
+  width: 100%;
+  height: 500px;
+  background: url(assets/img/top/top_slider_bg.jpg) no-repeat center center;
+}
+.l-top-slider .navi-list {
+  width: 1000px;
+  margin: 0 auto;
+}
+.l-top-slider .navi-list li {
+  height: 45px;
+}
+
+/*==============================
+コンテンツ
+==============================*/
+.l-contents {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+}
+.l-contents .l-main {
+  width: 700px;
+  display: table-cell;
+  margin: 0 40px 0 0;
+  vertical-align: top;
+}
+.l-contents .l-side {
+  display: table-cell;
+  vertical-align: top;
+  width: 260px;
+  padding: 0 0 0 40px;
+}
+.l-contents .l-side .side-banner {
+  padding: 0 0 20px;
+}
+.l-contents .l-side .side-banner li:not(:last-child) {
+  padding: 0 0 17px 0;
+}
+.l-contents .l-side .side-kankei li {
+  padding: 5px 0 5px 15px;
+  background: url(assets/img/layout/side/side_kankei_li_bg.png) no-repeat 0 13px;
+}
+.l-contents .l-side .side-kankei li a {
+  text-decoration: none;
+  color: #1f7aba;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/*==============================
+トップページ
+==============================*/
+.l-top-catch {
+  padding: 0 0 45px 0;
+}
+.l-top-catch li {
+  border: 1px solid #dadada;
+  border-radius: 3px;
+  width: 218px;
+  float: left;
+  text-align: center;
+  margin: 20px 20px 0 0;
+  height: 310px;
+}
+.l-top-catch li:last-child {
+  margin: 20px 0 0 0;
+}
+.l-top-catch li .headline {
+  padding: 0 0 15px;
+}
+.l-top-catch li p {
+  text-align: left;
+  padding: 15px 9px 0;
+  color: #505c7a;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.l-top-free-consultant {
+  padding: 0 0 40px;
+}
+.l-top-free-consultant li {
+  float: left;
+  padding: 20px 20px 0 0;
+}
+.l-top-free-consultant li:last-child {
+  padding: 20px 0 0;
+}
+
+.l-top-news {
+  padding: 0 0 40px;
+}
+.l-top-news li {
+  padding: 19px 0 0;
+}
+.l-top-news li a {
+  text-decoration: none;
+}
+.l-top-news .top-news-latest {
+  float: left;
+  width: 339px;
+}
+.l-top-news .top-news-semina {
+  float: right;
+  width: 340px;
+}
+.l-top-news span.date {
+  font-weight: bold;
+  color: #333333;
+  font-size: 12px;
+}
+.l-top-news span.category {
+  color: #fff;
+  padding: 0 15px;
+  margin: 0 0 0 10px;
+  position: relative;
+  font-size: 11px;
+}
+.l-top-news span.category:after {
+  background: url(assets/img/top/top_news_category_after.png) no-repeat 9px 2px;
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 16px;
+}
+.l-top-news span.jigyou {
+  background: #1465a3;
+}
+.l-top-news span.company {
+  background: #0795b9;
+}
+.l-top-news p {
+  line-height: 20px;
+  font-size: 12px;
+  color: #1f7aba;
+  padding: 5px 0 0;
+}
+.l-top-news .read-more {
+  padding: 20px 0 0;
+}
+
+.l-top-media {
+  padding: 0 0 60px;
+}
+.l-top-media li {
+  padding: 20px 20px 0 0;
+}
+.l-top-media li:last-child {
+  padding: 20px 0 0;
+}
+
+.pagetop {
+  font-size: 0;
+  text-align: right;
+}
+
+/*==============================
+フッター
+==============================*/
+.l-footer {
+  width: 100%;
+  padding: 20px 0 0;
+  color: #fff;
+  background: #0271c7;
+}
+.l-footer .footer-left {
+  float: left;
+  width: 265px;
+}
+.l-footer .footer-left img {
+  margin: 0 0 10px;
+}
+.l-footer .footer-left img:nth-child(3) {
+  margin: 0;
+}
+.l-footer .footer-left p {
+  font-size: 11.98px;
+  line-height: 24px;
+  color: #f2f2f2;
+  padding: 0;
+}
+.l-footer .footer-left .address {
+  margin: 0 0 0 0;
+  font-size: 11px;
+  line-height: 14px;
+}
+.l-footer .footer-menu {
+  float: right;
+}
+.l-footer .footer-menu a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+.l-footer .footer-menu li {
+  float: left;
+  padding: 0 0 0 20px;
+  font-size: 10px;
+}
+.l-footer .footer-menu li li {
+  float: none;
+  padding: 0 0 10px;
+}
+.l-footer .l-copyright {
+  background: #004a83;
+  padding: 10px 0;
+  text-align: center;
+  margin: 20px 0 0;
+  font-size: 9px;
+  color: #dadada;
+}
