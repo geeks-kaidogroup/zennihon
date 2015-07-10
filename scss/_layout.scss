@@ -23,6 +23,7 @@
 ==============================*/
 .l-header {
 	background:#fdfdfd;
+	padding: 12px 0 0;
 	.header-logo {
 		float:left;
         width: 280px;
@@ -54,8 +55,6 @@
 	}
 }
 
-
-
 // ============================
 // l-navi
 // ============================
@@ -65,7 +64,7 @@
 .l-navi {
 	width:100%;
 	height:60px;
-    margin: 13px 0 5px;
+    margin: 13px 0 0;
 	background:url(assets/img/layout/navi/navi_bg.png) no-repeat center center;
 	.navi-list {
 		@include wrap;
@@ -83,6 +82,7 @@
 .l-top-slider {
 	width:100%;
 	height:495px;
+    margin: 5px 0 0;
 	background:url(assets/img/top/top_slider_bg.jpg) no-repeat center center;
 	.navi-list {
 		@include wrap;
@@ -116,50 +116,60 @@
 	@include wrap;
 	@extend %extend-cf;
 	padding: 95px 0 0 0;
-	.l-main {
-		width:700px;
-        display: table-cell;
-        margin: 0 40px 0 0;
-        vertical-align: top;
-	}
-	.l-side {
-		display: table-cell;
-        vertical-align: top;
-		width:260px;
-        padding: 0 0 0 40px;
-        .side-banner{
-            padding: 0 0 20px;
-            li{
-                &:not(:last-child){
-                    padding: 0 0 17px 0;
-                }
-                &:hover{
-                    opacity: 0.8;
-                }
-            }
-        }
-        .side-kankei{
-            padding: 0 0 20px;
-            h3{
-                padding: 0 0 10px;
-            }
-            li{
-                padding: 5px 0 5px 15px;
-                background: url(assets/img/layout/side/side_kankei_li_bg.png) no-repeat 0 13px;
-                a{
-                    text-decoration: none;
-                    color: #1f7aba;
-                    font-size: 12px;
-                    line-height: 20px;
-                    &:hover{
-                        text-decoration: underline;
-                    }
-                }
-            }
-        }
-	}
 }
-
+.l-main {
+    width:700px;
+    display: table-cell;
+    margin: 0 40px 0 0;
+    vertical-align: top;
+}
+/*******sadebar********/
+.l-side {
+    display: table-cell;
+    vertical-align: top;
+    width:260px;
+    padding: 0 0 87px 40px;
+    .side-menu{
+        font-size: 0;
+        padding: 0 0 12px;
+        li{
+            padding: 0 0 10px;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+    .side-banner{
+        padding: 0 0 20px;
+        li{
+            &:not(:last-child){
+                padding: 0 0 17px 0;
+            }
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+    .side-kankei{
+        padding: 0 0 20px;
+        h3{
+            padding: 0 0 10px;
+        }
+        li{
+            padding: 5px 0 5px 15px;
+            background: url(assets/img/layout/side/side_kankei_li_bg.png) no-repeat 0 13px;
+            a{
+                text-decoration: none;
+                color: #1f7aba;
+                font-size: 12px;
+                line-height: 20px;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
 
 // ============================
 // top
@@ -269,12 +279,150 @@
         }
     }
 }
-.pagetop{
+.l-pagetop{
     font-size: 0;
     text-align: right;
     &:hover{
         opacity: 0.8;
     }
+}
+
+/*==============================
+   AJ1様_サービス内容 (service)
+==============================*/
+.l-page-contents{
+    .page-headline{
+        background: url(assets/img/page/page_head_h2_bg.png) no-repeat center top;
+        height: 120px;
+        margin: 0 0 40px;
+        h2{
+            padding: 33px 0;
+        }
+    }
+    .l-page-breadcrumb{
+        font-size: 12px;
+        color: #333333;
+        li{
+            padding: 0 12px 0 0;
+            &:not(:first-child){
+                &:before{
+                    content: ">";
+                    padding: 0 12px 0 0;
+                }
+            }
+            a{
+                color: #2879b8;
+            }
+        }
+    }
+}
+.l-page-main{
+    padding: 42px 0 0;
+    h3{
+        padding: 0 0 35px;
+    }
+    p{
+        font-size: 14px;
+        color: #333333;
+        line-height: 1.714;
+    }
+    .servicebox{
+        padding: 40px 0 75px;
+        .servicebox-mokuji{
+            float: left;
+            width: 318px;
+        }
+        p{
+            font-size: 14px;
+            color: #333333;
+            line-height: 1.714;
+            padding: 18px 0 0;
+            letter-spacing: -0.8px;
+            &.text-blue{
+                padding: 10px 0 42px;
+                font-size: 14px;
+                color: #2482cd;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+        .message{
+            position: relative;
+            bottom: 40px;
+            text-align: right;
+            margin: 0 0 -80px;
+        }
+    }
+    .servicebox-contents{
+        float: left;
+        width: 682px;
+    }
+}
+
+/*============================
+実績
+============================*/
+.l-page-wrap{
+    @include wrap;
+    .l-jisseki-contents{
+        padding: 51px 0 0;
+        p{
+	        font-size: 14px;
+	        line-height: 1.714;
+	        padding: 0 0 45px;
+	        color: #333333;
+    	}
+        li{
+            background: url(assets/img/page/jisseki/jisseki_list_bg.png) no-repeat 0 6px;
+            padding: 0 0 25px 17px;
+            color: #333333;
+            font-size: 18px;
+            line-height: 1.333;
+        }
+        .jisseki-btn{
+            text-align: center;
+            padding: 45px 0 0;
+            a{
+	            &:hover{
+	            	opacity: 0.8;
+	            }
+            }
+        }
+    }
+}
+
+/*============================
+	特徴　Features
+============================*/
+.l-features-contents{
+    padding: 51px 0 40px;
+    li{
+    	padding: 28px 0 0;
+    	&:first-child{
+    		padding: 40px 0;
+    	}
+    }
+    .message{
+    	border: 1px solid #dadada;
+    	border-radius: 5px;
+    	margin: 40px 0 0;
+    	padding: 20px;
+    	font-size: 12px;
+    	line-height: 1.5;
+    	transform: matrix( 1,0,0,1.00009293191983,0,0);
+    	p{
+    		&.text1{
+    			padding: 25px 0;
+    		}
+    		span{
+    			color: #3389cf;
+    		}
+    	}
+    }
+    .features-text{
+    	padding: 40px 0 0;
+    }
+
 }
 // ============================
 // l-footer
