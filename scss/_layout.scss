@@ -76,7 +76,7 @@
 ==============================*/
 .l-top-slider {
 	width:100%;
-	height:500px;
+	height:495px;
 	background:url(assets/img/top/top_slider_bg.jpg) no-repeat center center;
 	.navi-list {
 		@include wrap;
@@ -84,6 +84,20 @@
 			height:45px;
 		}
 	}
+    .top-slider-wrapper{
+        display:block;
+        position:relative;
+        max-width:928px;
+        margin:0 auto 48px;
+        .top-slide{
+            display:block;
+            position:relative;
+            margin:0 auto;
+            ul{
+                display:none;
+            }
+        }
+    }
 }
 
 // ============================
@@ -95,7 +109,7 @@
 .l-contents {
 	@include wrap;
 	@extend %extend-cf;
-	padding:20px 0 0 0;
+	padding: 95px 0 0 0;
 	.l-main {
 		width:700px;
         display: table-cell;
@@ -116,6 +130,10 @@
             }
         }
         .side-kankei{
+            padding: 0 0 20px;
+            h3{
+                padding: 0 0 10px;
+            }
             li{
                 padding: 5px 0 5px 15px;
                 background: url(assets/img/layout/side/side_kankei_li_bg.png) no-repeat 0 13px;
@@ -215,6 +233,12 @@
         &.company{
             background: #0795b9;
         }
+        &.other{
+            background: #14a383;
+        }
+        &.other1{
+            background: #88c762;
+        }
     }
     p{
         line-height: 20px;
@@ -276,11 +300,15 @@
         a{
             color: #f2f2f2;
             text-decoration: none;
+            &:hover{
+                color: #fff;
+                text-decoration: underline;
+            }
         }
         li{
             float: left;
             padding: 0 0 0 20px;
-            font-size: 10px;
+            font-size: 11px;
             li{
                 float: none;
                 padding: 0 0 10px;

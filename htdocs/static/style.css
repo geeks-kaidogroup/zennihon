@@ -146,7 +146,7 @@ a:hover, a:active, a:focus {
 ==============================*/
 .l-top-slider {
   width: 100%;
-  height: 500px;
+  height: 495px;
   background: url(assets/img/top/top_slider_bg.jpg) no-repeat center center;
 }
 .l-top-slider .navi-list {
@@ -156,6 +156,20 @@ a:hover, a:active, a:focus {
 .l-top-slider .navi-list li {
   height: 45px;
 }
+.l-top-slider .top-slider-wrapper {
+  display: block;
+  position: relative;
+  max-width: 928px;
+  margin: 0 auto 48px;
+}
+.l-top-slider .top-slider-wrapper .top-slide {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+.l-top-slider .top-slider-wrapper .top-slide ul {
+  display: none;
+}
 
 /*==============================
 コンテンツ
@@ -163,7 +177,7 @@ a:hover, a:active, a:focus {
 .l-contents {
   width: 1000px;
   margin: 0 auto;
-  padding: 20px 0 0 0;
+  padding: 95px 0 0 0;
 }
 .l-contents .l-main {
   width: 700px;
@@ -182,6 +196,12 @@ a:hover, a:active, a:focus {
 }
 .l-contents .l-side .side-banner li:not(:last-child) {
   padding: 0 0 17px 0;
+}
+.l-contents .l-side .side-kankei {
+  padding: 0 0 20px;
+}
+.l-contents .l-side .side-kankei h3 {
+  padding: 0 0 10px;
 }
 .l-contents .l-side .side-kankei li {
   padding: 5px 0 5px 15px;
@@ -276,6 +296,12 @@ a:hover, a:active, a:focus {
 .l-top-news span.company {
   background: #0795b9;
 }
+.l-top-news span.other {
+  background: #14a383;
+}
+.l-top-news span.other1 {
+  background: #88c762;
+}
 .l-top-news p {
   line-height: 20px;
   font-size: 12px;
@@ -338,10 +364,14 @@ a:hover, a:active, a:focus {
   color: #f2f2f2;
   text-decoration: none;
 }
+.l-footer .footer-menu a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
 .l-footer .footer-menu li {
   float: left;
   padding: 0 0 0 20px;
-  font-size: 10px;
+  font-size: 11px;
 }
 .l-footer .footer-menu li li {
   float: none;
