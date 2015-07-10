@@ -431,43 +431,43 @@ a:hover, a:active, a:focus {
   width: 1000px;
   margin: 0 auto;
 }
-.l-page-wrap .l-jisseki-contents {
+.l-page-wrap .l-page-jisseki-contents {
   padding: 51px 0 0;
 }
-.l-page-wrap .l-jisseki-contents p {
+.l-page-wrap .l-page-jisseki-contents p {
   font-size: 14px;
   line-height: 1.714;
   padding: 0 0 45px;
   color: #333333;
 }
-.l-page-wrap .l-jisseki-contents li {
+.l-page-wrap .l-page-jisseki-contents li {
   background: url(assets/img/page/jisseki/jisseki_list_bg.png) no-repeat 0 6px;
   padding: 0 0 25px 17px;
   color: #333333;
   font-size: 18px;
   line-height: 1.333;
 }
-.l-page-wrap .l-jisseki-contents .jisseki-btn {
+.l-page-wrap .l-page-jisseki-contents .jisseki-btn {
   text-align: center;
   padding: 45px 0 0;
 }
-.l-page-wrap .l-jisseki-contents .jisseki-btn a:hover {
+.l-page-wrap .l-page-jisseki-contents .jisseki-btn a:hover {
   opacity: 0.8;
 }
 
 /*============================
 	特徴　Features
 ============================*/
-.l-features-contents {
+.l-page-features-contents {
   padding: 51px 0 40px;
 }
-.l-features-contents li {
+.l-page-features-contents li {
   padding: 28px 0 0;
 }
-.l-features-contents li:first-child {
+.l-page-features-contents li:first-child {
   padding: 40px 0;
 }
-.l-features-contents .message {
+.l-page-features-contents .message {
   border: 1px solid #dadada;
   border-radius: 5px;
   margin: 40px 0 0;
@@ -476,14 +476,22 @@ a:hover, a:active, a:focus {
   line-height: 1.5;
   transform: matrix(1, 0, 0, 1.00009, 0, 0);
 }
-.l-features-contents .message p.text1 {
+.l-page-features-contents .message p.text1 {
   padding: 25px 0;
 }
-.l-features-contents .message p span {
+.l-page-features-contents .message p span {
   color: #3389cf;
 }
-.l-features-contents .features-text {
+.l-page-features-contents .features-text {
   padding: 40px 0 0;
+}
+
+/*============================
+	AJ1様_Thanksページ
+============================*/
+.l-page-thanks {
+  text-align: center;
+  padding: 45px 0 0;
 }
 
 /*==============================

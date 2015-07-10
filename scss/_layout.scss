@@ -364,7 +364,7 @@
 ============================*/
 .l-page-wrap{
     @include wrap;
-    .l-jisseki-contents{
+    .l-page-jisseki-contents{
         padding: 51px 0 0;
         p{
 	        font-size: 14px;
@@ -394,7 +394,7 @@
 /*============================
 	特徴　Features
 ============================*/
-.l-features-contents{
+.l-page-features-contents{
     padding: 51px 0 40px;
     li{
     	padding: 28px 0 0;
@@ -424,6 +424,15 @@
     }
 
 }
+
+/*============================
+	AJ1様_Thanksページ
+============================*/
+.l-page-thanks{
+	text-align: center;
+	padding: 45px 0 0;
+}
+
 // ============================
 // l-footer
 // ============================
