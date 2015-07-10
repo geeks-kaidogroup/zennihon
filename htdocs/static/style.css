@@ -103,25 +103,31 @@ a:hover, a:active, a:focus {
 .l-header .header-logo {
   float: left;
   width: 280px;
-  padding: 13px 0 0;
 }
 .l-header h1 {
   float: left;
-  padding: 25px 0 0;
+  padding: 8px 0 0;
   width: 280px;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 10.94px;
+  line-height: 1.645;
   color: #525252;
+  transform: matrix(1, 0, 0, 1.00549, 0, 0);
 }
 .l-header .header-btn {
   float: right;
   width: 440px;
 }
 .l-header .header-btn .header-list {
-  padding: 23px 0 0 0;
+  padding: 10px 0 0 0;
 }
 .l-header .header-btn .header-list li {
   padding: 0 0 0 20px;
+}
+.l-header .header-btn .header-list li:first-child {
+  padding: 5px 0 0 23px;
+}
+.l-header .header-btn .header-list li:hover {
+  opacity: 0.8;
 }
 
 /*==============================
@@ -130,7 +136,7 @@ a:hover, a:active, a:focus {
 .l-navi {
   width: 100%;
   height: 60px;
-  margin: 17px 0 5px;
+  margin: 13px 0 5px;
   background: url(assets/img/layout/navi/navi_bg.png) no-repeat center center;
 }
 .l-navi .navi-list {
@@ -197,6 +203,9 @@ a:hover, a:active, a:focus {
 .l-contents .l-side .side-banner li:not(:last-child) {
   padding: 0 0 17px 0;
 }
+.l-contents .l-side .side-banner li:hover {
+  opacity: 0.8;
+}
 .l-contents .l-side .side-kankei {
   padding: 0 0 20px;
 }
@@ -213,6 +222,9 @@ a:hover, a:active, a:focus {
   font-size: 12px;
   line-height: 20px;
 }
+.l-contents .l-side .side-kankei li a:hover {
+  text-decoration: underline;
+}
 
 /*==============================
 トップページ
@@ -224,7 +236,6 @@ a:hover, a:active, a:focus {
   border: 1px solid #dadada;
   border-radius: 3px;
   width: 218px;
-  float: left;
   text-align: center;
   margin: 20px 20px 0 0;
   height: 310px;
@@ -325,6 +336,9 @@ a:hover, a:active, a:focus {
 .pagetop {
   font-size: 0;
   text-align: right;
+}
+.pagetop:hover {
+  opacity: 0.8;
 }
 
 /*==============================
