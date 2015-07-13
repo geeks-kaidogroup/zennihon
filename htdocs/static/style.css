@@ -57,10 +57,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* General */
-.float-list, .wrap, .l-contents, .cf {
+.float-list, .wrap, .l-contents, .l-page-mailmagazine li .magabox, .cf {
   *zoom: 1;
 }
-.float-list:after, .wrap:after, .l-contents:after, .cf:after {
+.float-list:after, .wrap:after, .l-contents:after, .l-page-mailmagazine li .magabox:after, .cf:after {
   content: "";
   display: block;
   clear: both;
@@ -73,7 +73,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* Base */
 body {
-  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Meiryo', 'メイリオ', 'sans-serif';
+  font-family: 'Meiryo', 'メイリオ', 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'sans-serif';
   background: #fdfdfd;
 }
 
@@ -189,7 +189,7 @@ a:hover, a:active, a:focus {
 }
 
 .l-main {
-  width: 700px;
+  width: 720px;
   display: table-cell;
   margin: 0 40px 0 0;
   vertical-align: top;
@@ -200,7 +200,7 @@ a:hover, a:active, a:focus {
   display: table-cell;
   vertical-align: top;
   width: 260px;
-  padding: 0 0 87px 40px;
+  padding: 0 0 87px 20px;
 }
 .l-side .side-menu {
   font-size: 0;
@@ -242,7 +242,7 @@ a:hover, a:active, a:focus {
 }
 
 /*==============================
-トップページ
+	AJ1様_トップページ
 ==============================*/
 .l-top-catch {
   padding: 0 0 45px 0;
@@ -381,51 +381,54 @@ a:hover, a:active, a:focus {
   color: #2879b8;
 }
 
-.l-page-main {
+.l-page-service {
   padding: 42px 0 0;
 }
-.l-page-main h3 {
+.l-page-service h3 {
   padding: 0 0 35px;
 }
-.l-page-main p {
+.l-page-service p {
   font-size: 14px;
   color: #333333;
   line-height: 1.714;
 }
-.l-page-main .servicebox {
+.l-page-service .servicebox {
   padding: 40px 0 75px;
 }
-.l-page-main .servicebox .servicebox-mokuji {
+.l-page-service .servicebox .servicebox-mokuji {
   float: left;
   width: 318px;
 }
-.l-page-main .servicebox p {
+.l-page-service .servicebox .servicebox-mokuji li {
+  padding: 0 0 3px;
+}
+.l-page-service .servicebox p {
   font-size: 14px;
   color: #333333;
   line-height: 1.714;
   padding: 18px 0 0;
   letter-spacing: -0.8px;
 }
-.l-page-main .servicebox p.text-blue {
+.l-page-service .servicebox p.text-blue {
   padding: 10px 0 42px;
   font-size: 14px;
   color: #2482cd;
   font-weight: bold;
   text-decoration: underline;
 }
-.l-page-main .servicebox .message {
+.l-page-service .servicebox .message {
   position: relative;
   bottom: 40px;
   text-align: right;
   margin: 0 0 -80px;
 }
-.l-page-main .servicebox-contents {
+.l-page-service .servicebox-contents {
   float: left;
   width: 682px;
 }
 
 /*============================
-実績
+	AJ1様_実績
 ============================*/
 .l-page-wrap {
   width: 1000px;
@@ -456,7 +459,7 @@ a:hover, a:active, a:focus {
 }
 
 /*============================
-	特徴　Features
+	AJ1様_特徴　Features
 ============================*/
 .l-page-features-contents {
   padding: 51px 0 40px;
@@ -492,6 +495,643 @@ a:hover, a:active, a:focus {
 .l-page-thanks {
   text-align: center;
   padding: 45px 0 0;
+}
+
+/*============================
+	AJ1様_メールマガジン登録
+============================*/
+.l-page-mailmagazine {
+  padding: 40px 0;
+}
+.l-page-mailmagazine p {
+  padding: 30px 0 55px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+.l-page-mailmagazine p.note1 {
+  font-size: 12px;
+  padding: 20px 0 53px;
+  color: #000;
+}
+.l-page-mailmagazine p.note2 {
+  font-size: 12px;
+  padding: 10px 0 20px;
+  color: #000;
+}
+.l-page-mailmagazine li {
+  width: 430px;
+}
+.l-page-mailmagazine li:not(:last-child) {
+  padding: 0 70px 0 0;
+}
+.l-page-mailmagazine li p {
+  display: block;
+  padding: 20px 0 15px;
+  color: #000000;
+}
+.l-page-mailmagazine li .magabox .magabox-thumb {
+  float: left;
+  width: 190px;
+}
+.l-page-mailmagazine li .magabox .magabox-text {
+  float: right;
+  width: 225px;
+}
+.l-page-mailmagazine li .magabox .magabox-text p {
+  padding: 0;
+  font-size: 12px;
+}
+.l-page-mailmagazine table {
+  width: 930px;
+  font-size: 12px;
+  color: #000;
+  line-height: 2.33;
+}
+.l-page-mailmagazine table th, .l-page-mailmagazine table td {
+  border: 1px solid #cccccc;
+}
+.l-page-mailmagazine table th {
+  background: #f3f3f3;
+  width: 250px;
+  padding: 0 0 0 15px;
+}
+.l-page-mailmagazine table th span {
+  float: right;
+  background: #da0000;
+  color: #fff;
+  border-radius: 3px;
+  margin: 0 15px 0 0;
+  text-align: center;
+  width: 50px;
+}
+.l-page-mailmagazine table td {
+  padding: 15px 0 15px 25px;
+}
+.l-page-mailmagazine table input {
+  width: 297px;
+  height: 22px;
+  margin: 0 20px 0 0;
+  border: 1px solid #cccccc;
+  outline: none;
+  padding: 0 5px;
+}
+.l-page-mailmagazine table .select-style {
+  width: 307px;
+  height: 25px;
+  background: #fff url(assets/img/page/mailmagazine/mailmaga_select_arrow.png) no-repeat right;
+  font-size: 12px;
+  line-height: 1;
+  overflow: hidden;
+}
+.l-page-mailmagazine table .select-style select {
+  width: 330px;
+  height: 25px;
+  border: 1px solid #cccccc;
+  background: transparent;
+  outline: none;
+}
+.l-page-mailmagazine .mailmaga-btn {
+  text-align: center;
+  padding: 52px 0 75px;
+}
+.l-page-mailmagazine .mailmaga-btn a:hover {
+  opacity: 0.8;
+}
+
+/*============================
+	AJ1様_会社概要
+============================*/
+.l-page-company {
+  padding: 40px 0 155px;
+}
+.l-page-company .message {
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  margin: 20px 0 30px;
+  padding: 20px 13px;
+  font-size: 12px;
+  color: #000000;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  transform: matrix(1, 0, 0, 1.00009, 0, 0);
+}
+.l-page-company .message p span {
+  color: #3389cf;
+  font-weight: bold;
+}
+.l-page-company dl {
+  margin: 18px 0 35px 20px;
+  font-size: 12px;
+  color: #000;
+}
+.l-page-company dl dt, .l-page-company dl dd {
+  float: left;
+  border-bottom: 1px solid #ccc;
+  padding: 25px 0 20px;
+}
+.l-page-company dl dt:nth-last-child(1), .l-page-company dl dt:nth-last-child(2), .l-page-company dl dd:nth-last-child(1), .l-page-company dl dd:nth-last-child(2) {
+  border-bottom: none;
+  line-height: 24px;
+}
+.l-page-company dl dt {
+  width: 110px;
+}
+.l-page-company dl dd {
+  width: 580px;
+}
+.l-page-company .company-access {
+  padding: 20px 0 40px;
+}
+.l-page-company table {
+  font-size: 12px;
+  color: #000;
+  margin: 10px 0 0;
+  line-height: 18px;
+}
+.l-page-company table th, .l-page-company table td {
+  padding: 10px 0;
+  vertical-align: top;
+}
+.l-page-company table th {
+  padding: 10px 40px 0 0;
+}
+.l-page-company table tr:nth-child(2) {
+  line-height: 40px;
+}
+.l-page-company table tr:nth-child(2) th {
+  padding: 0 40px 0 0;
+}
+.l-page-company table tr:nth-child(2) td {
+  padding: 0;
+}
+
+/*==============================
+	AJ1様_代表挨拶
+==============================*/
+.l-page-greeting {
+  padding: 38px 0 85px;
+}
+.l-page-greeting h3 {
+  padding: 0 0 20px;
+}
+.l-page-greeting .greeting-box {
+  font-size: 12px;
+  line-height: 24px;
+  color: #000;
+}
+.l-page-greeting .greeting-box .greeting-box-thumb {
+  float: left;
+  width: 276px;
+}
+.l-page-greeting .greeting-box .greeting-box-text {
+  float: right;
+  width: 444px;
+}
+.l-page-greeting .greeting-box .greeting-box-text p {
+  padding: 0 0 35px;
+}
+.l-page-greeting .greeting-box .greeting-box-text .signature {
+  text-align: right;
+  padding: 0 0 45px;
+}
+.l-page-greeting .greeting-box .greeting-box-text .signature P {
+  padding: 0 0 8px;
+}
+.l-page-greeting .message {
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  padding: 20px 18px;
+  font-size: 12px;
+  line-height: 1.5;
+  transform: matrix(1, 0, 0, 1.00009, 0, 0);
+}
+
+/*==============================
+	AJ1様_理念とビジョン
+==============================*/
+.l-page-vision {
+  padding: 37px 0 8px;
+}
+.l-page-vision h3 {
+  padding: 0 0 25px;
+}
+.l-page-vision li {
+  padding: 0 0 43px;
+}
+
+/*==============================
+	AJ1様_採用情報
+==============================*/
+.l-page-recruit {
+  padding: 37px 0 105px;
+}
+.l-page-recruit h3 {
+  padding: 0 0 25px;
+}
+.l-page-recruit .recruit-head-text {
+  padding: 14px 0 25px;
+}
+.l-page-recruit p {
+  font-size: 12px;
+  line-height: 1.5;
+  transform: matrix(1, 0, 0, 1.00009, 0, 0);
+  color: #000;
+  padding: 0 0 25px;
+}
+.l-page-recruit p span {
+  color: #2482cd;
+  font-weight: bold;
+  display: block;
+}
+.l-page-recruit .message {
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  padding: 20px 18px;
+}
+.l-page-recruit .message p:last-child {
+  padding: 0;
+}
+.l-page-recruit .recruit-arrow {
+  text-align: center;
+  padding: 32px 0 23px;
+}
+.l-page-recruit table {
+  width: 720px;
+}
+.l-page-recruit table th, .l-page-recruit table td {
+  border: 1px solid #ccc;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 2;
+  color: #333333;
+}
+.l-page-recruit table th {
+  background: #f2f2f2;
+  width: 158px;
+  padding: 18px 0 18px 20px;
+}
+.l-page-recruit table td {
+  padding: 18px 0 18px 25px;
+}
+.l-page-recruit table a {
+  color: #2482cd;
+}
+
+/*==============================
+	AJ1様_お問い合わせ
+==============================*/
+.l-page-contact {
+  padding: 45px 0 103px;
+}
+.l-page-contact .contact-step1 {
+  text-align: center;
+  padding: 0 0 38px;
+}
+.l-page-contact h3 {
+  padding: 0 0 18px;
+}
+.l-page-contact table {
+  width: 930px;
+  font-size: 12px;
+  color: #000;
+  line-height: 2.33;
+}
+.l-page-contact table th, .l-page-contact table td {
+  border: 1px solid #cccccc;
+  vertical-align: top;
+}
+.l-page-contact table th {
+  background: #f3f3f3;
+  width: 235px;
+  padding: 15px 0 0 15px;
+}
+.l-page-contact table th span {
+  float: right;
+  background: #da0000;
+  color: #fff;
+  border-radius: 3px;
+  margin: 0 15px 0 0;
+  text-align: center;
+  width: 50px;
+}
+.l-page-contact table td {
+  padding: 15px 0 15px 25px;
+}
+.l-page-contact table input {
+  width: 297px;
+  height: 22px;
+  margin: 0 20px 0 0;
+  border: 1px solid #cccccc;
+  outline: none;
+  padding: 0 5px;
+  display: inline-table;
+  vertical-align: middle;
+}
+.l-page-contact table p {
+  display: inline-table;
+  vertical-align: middle;
+  width: 280px;
+}
+.l-page-contact table textarea {
+  width: 620px;
+  height: 127px;
+  font-size: 14px;
+  padding: 5px 0 0 5px;
+  resize: none;
+  outline: none;
+}
+.l-page-contact table.contact-naiyo {
+  margin: 0 0 40px;
+}
+.l-page-contact table.contact-naiyo th, .l-page-contact table.contact-naiyo td {
+  vertical-align: middle;
+}
+.l-page-contact table.contact-naiyo th {
+  background: #fff;
+}
+.l-page-contact .contact-btn {
+  text-align: center;
+  padding: 32px 0 0;
+}
+.l-page-contact .contact-btn a:hover {
+  opacity: 0.8;
+}
+
+/*==============================
+AJ1様_管理会計マネジメント
+==============================*/
+.l-page-kaikei {
+  padding: 42px 0 0;
+}
+.l-page-kaikei h3 {
+  padding: 0 0 22px;
+}
+.l-page-kaikei h4 {
+  padding: 45px 0 0;
+}
+.l-page-kaikei p {
+  font-size: 12px;
+  color: #333333;
+  line-height: 1.714;
+}
+.l-page-kaikei p.headtext {
+  font-size: 14px;
+}
+.l-page-kaikei p.headline-list {
+  font-weight: bold;
+  color: #000000;
+  padding: 5px 0 0;
+}
+.l-page-kaikei p.text1 {
+  padding: 24px 0 0;
+}
+.l-page-kaikei p.text2 {
+  padding: 32px 0 0;
+}
+.l-page-kaikei p.text3 {
+  padding: 10px 0 0;
+}
+.l-page-kaikei p.text4 {
+  padding: 0;
+}
+.l-page-kaikei p.text5 {
+  padding: 0 0 30px;
+}
+.l-page-kaikei p.text6 {
+  padding: 45px 0 0;
+}
+.l-page-kaikei p.text7 {
+  padding: 38px 0 0 32px;
+}
+.l-page-kaikei .kaikeibox {
+  padding: 40px 0 75px;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-mokuji {
+  float: left;
+  width: 318px;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-mokuji li {
+  padding: 0 0 3px;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-contents {
+  float: left;
+  width: 682px;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-contents .headtext {
+  padding: 0 0 34px;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-contents .strong-points {
+  text-align: center;
+  padding: 25px 0 0;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-contents .kaikeibox-contents-graybox {
+  background: #e6e6e6;
+  text-align: center;
+  margin: 30px 0 0;
+  border: 1px solid #cccccc;
+  padding: 80px 0;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-contents .kaikeibox-contents-graybox p {
+  font-size: 13.8px;
+  color: #333333;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-contents ul.original-kaikei li {
+  width: 331px;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-contents ul.original-kaikei li:first-child {
+  padding: 0 20px 0 0;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-contents ul.original-kaikei li p {
+  text-align: center;
+  padding: 10px 0 45px;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-contents .other-field {
+  padding: 63px 0 0;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-contents .other-field ul {
+  padding: 20px 0 0;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-contents .other-field ul li {
+  width: 227px;
+  color: #000000;
+  font-size: 12px;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-contents .other-field ul li p {
+  font-size: 14px;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-contents .other-field ul li li {
+  line-height: 23.65px;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-contents .management-strategy {
+  padding: 40px 0 0;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-contents .useful-contents {
+  padding: 25px 0 0;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-contents .useful-contents .useful-contents-box {
+  float: left;
+  width: 320px;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-contents .useful-contents .useful-contents-box:last-child {
+  float: right;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-contents .useful-contents .useful-contents-box li {
+  padding: 0 0 10px;
+}
+.l-page-kaikei .kaikeibox .kaikeibox-contents .contact-banner {
+  padding: 54px 0;
+  text-align: center;
+}
+
+/*==============================
+	AJ1様_資料請求
+==============================*/
+.l-page-request {
+  padding: 45px 0 85px;
+}
+.l-page-request h3 {
+  padding: 0 0 20px;
+}
+.l-page-request table {
+  width: 930px;
+  font-size: 12px;
+  color: #000;
+  line-height: 2.33;
+}
+.l-page-request table.customer-info {
+  margin: 0 0 37px;
+}
+.l-page-request table.customer-info th, .l-page-request table.customer-info td {
+  border: 1px solid #cccccc;
+  vertical-align: top;
+}
+.l-page-request table.customer-info th {
+  background: #f3f3f3;
+  width: 235px;
+  padding: 15px 0 0 15px;
+}
+.l-page-request table.customer-info th span {
+  float: right;
+  background: #da0000;
+  color: #fff;
+  border-radius: 3px;
+  margin: 0 15px 0 0;
+  text-align: center;
+  width: 50px;
+}
+.l-page-request table.customer-info td {
+  padding: 15px 0 15px 25px;
+}
+.l-page-request table.customer-info input {
+  width: 297px;
+  height: 22px;
+  margin: 0 20px 0 0;
+  border: 1px solid #cccccc;
+  outline: none;
+  padding: 0 5px;
+  display: inline-table;
+  vertical-align: middle;
+}
+.l-page-request table.customer-info p {
+  display: inline-table;
+  vertical-align: middle;
+  width: 280px;
+}
+.l-page-request table.customer-info textarea {
+  width: 620px;
+  height: 127px;
+  font-size: 14px;
+  padding: 5px 0 0 5px;
+  resize: none;
+  outline: none;
+}
+.l-page-request table.anket {
+  border: 1px solid #ccc;
+  margin: 0 0 40px;
+}
+.l-page-request table.anket th, .l-page-request table.anket td {
+  vertical-align: top;
+}
+.l-page-request table.anket th {
+  width: 323px;
+  padding: 20px 0 0 15px;
+}
+.l-page-request table.anket td {
+  padding: 20px 33px 0 0;
+}
+.l-page-request table.anket td .checkbox label {
+  float: left;
+  padding: 0 30px 0 0;
+}
+.l-page-request table.anket td .checkbox label span {
+  top: -7px;
+  position: relative;
+}
+.l-page-request table.anket td .checkbox label:nth-child(3) {
+  width: 300px;
+}
+.l-page-request table.anket td span {
+  padding: 0 20px 0 0;
+}
+.l-page-request table.anket td input {
+  outline: none;
+  border: 1px solid #ccc;
+  height: 23px;
+}
+.l-page-request table.anket td input.text1 {
+  width: 310px;
+  margin: 0 0 15px;
+}
+.l-page-request table.anket td input.text2 {
+  width: 490px;
+}
+.l-page-request table.anket td input.text3 {
+  width: 548px;
+}
+.l-page-request table.anket td p {
+  padding: 7px 0 18px;
+}
+.l-page-request .request-step {
+  text-align: center;
+  padding: 0 0 40px;
+}
+.l-page-request ul {
+  margin: 0 0 15px;
+}
+.l-page-request ul li {
+  padding: 0 15px 15px 0;
+}
+.l-page-request .message-box {
+  border: 1px solid #ccc;
+  padding: 15px 23px 5px 22px;
+  overflow: auto;
+  height: 230px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #535353;
+  background: #ffffff;
+}
+.l-page-request .message-box p {
+  padding: 0 0 25px;
+}
+.l-page-request .request-btn {
+  text-align: center;
+  padding: 40px 0 0;
+}
+.l-page-request .request-btn label {
+  padding: 0 0 30px;
+  font-size: 14px;
+  display: block;
+  color: #000;
+}
+.l-page-request .request-btn label span {
+  color: #c70000;
+  font-weight: bold;
+  padding: 0 0 0 15px;
+}
+.l-page-request .request-btn a:hover {
+  opacity: 0.8;
 }
 
 /*==============================
