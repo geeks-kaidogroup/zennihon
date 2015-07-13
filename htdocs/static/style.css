@@ -338,7 +338,7 @@ a:hover, a:active, a:focus {
 }
 
 .l-top-media {
-  padding: 0 0 60px;
+  padding: 0 0 35px;
 }
 .l-top-media li {
   padding: 20px 20px 0 0;
@@ -501,7 +501,7 @@ a:hover, a:active, a:focus {
 	AJ1様_メールマガジン登録
 ============================*/
 .l-page-mailmagazine {
-  padding: 40px 0;
+  padding: 40px 0 27px;
 }
 .l-page-mailmagazine p {
   padding: 30px 0 55px;
@@ -646,7 +646,7 @@ a:hover, a:active, a:focus {
 .l-page-company table {
   font-size: 12px;
   color: #000;
-  margin: 10px 0 0;
+  margin: 10px 0 0 20px;
   line-height: 18px;
 }
 .l-page-company table th, .l-page-company table td {
@@ -980,7 +980,7 @@ AJ1様_管理会計マネジメント
   padding: 0 0 10px;
 }
 .l-page-kaikei .kaikeibox .kaikeibox-contents .contact-banner {
-  padding: 54px 0;
+  padding: 54px 0 41px;
   text-align: center;
 }
 
@@ -1139,7 +1139,7 @@ AJ1様_管理会計マネジメント
 ==============================*/
 .l-footer {
   width: 100%;
-  padding: 20px 0 0;
+  padding: 19px 0 0;
   color: #fff;
   background: #0271c7;
 }
@@ -1148,21 +1148,21 @@ AJ1様_管理会計マネジメント
   width: 265px;
 }
 .l-footer .footer-left img {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
 }
 .l-footer .footer-left img:nth-child(3) {
   margin: 0;
 }
 .l-footer .footer-left p {
-  font-size: 11.98px;
-  line-height: 24px;
+  font-size: 11.059px;
+  line-height: 23px;
   color: #f2f2f2;
-  padding: 0;
+  padding: 0 0 9px;
 }
 .l-footer .footer-left .address {
   margin: 0 0 0 0;
   font-size: 11px;
-  line-height: 14px;
+  line-height: 1.273;
 }
 .l-footer .footer-menu {
   float: right;
@@ -1188,7 +1188,7 @@ AJ1様_管理会計マネジメント
   background: #004a83;
   padding: 10px 0;
   text-align: center;
-  margin: 20px 0 0;
+  margin: 8px 0 0;
   font-size: 9px;
   color: #dadada;
 }
